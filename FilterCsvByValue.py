@@ -4,7 +4,8 @@ import os
 
 if (len(sys.argv)<=2):
     print ("Usage:")
-    print ("    py {} <file> <condition1>".format(os.path.basename(__file__)))
+    print ("    py {} <file> <condition1> <condition2> ...".format(os.path.basename(__file__)))
+    print ("    conditions: <fldno>=<val>")
     sys.exit()
 
 class Condition:
